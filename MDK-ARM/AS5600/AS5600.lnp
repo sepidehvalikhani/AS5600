@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"as5600\startup_stm32f407xx.o"
+"as5600\main.o"
+"as5600\gpio.o"
+"as5600\i2c.o"
+"as5600\stm32f4xx_it.o"
+"as5600\stm32f4xx_hal_msp.o"
+"as5600\stm32f4xx_hal_i2c.o"
+"as5600\stm32f4xx_hal_i2c_ex.o"
+"as5600\stm32f4xx_hal_rcc.o"
+"as5600\stm32f4xx_hal_rcc_ex.o"
+"as5600\stm32f4xx_hal_flash.o"
+"as5600\stm32f4xx_hal_flash_ex.o"
+"as5600\stm32f4xx_hal_flash_ramfunc.o"
+"as5600\stm32f4xx_hal_gpio.o"
+"as5600\stm32f4xx_hal_dma_ex.o"
+"as5600\stm32f4xx_hal_dma.o"
+"as5600\stm32f4xx_hal_pwr.o"
+"as5600\stm32f4xx_hal_pwr_ex.o"
+"as5600\stm32f4xx_hal_cortex.o"
+"as5600\stm32f4xx_hal.o"
+"as5600\stm32f4xx_hal_exti.o"
+"as5600\system_stm32f4xx.o"
+--strict --scatter "AS5600\AS5600.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AS5600.map" -o AS5600\AS5600.axf
